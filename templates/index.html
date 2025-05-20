@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Illinois Pool Restoration and Repair</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">
+                        <span class="logo-text">Central Illinois</span>
+                        <span class="logo-highlight">Pool Restoration</span>
+                    </a>
+                </div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Recent Projects</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact" class="contact-btn">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Complete Pool<br>Restoration</h1>
+                <p class="tagline">Professional pool restoration and repair services in Central Illinois</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+                    <a href="#services" class="btn btn-secondary">View Our Services</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1603809946761-ca9a917eb416?auto=format&fit=crop&w=1600&q=80');"></div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="badges-section">
+        <div class="container">
+            <div class="badges-container">
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>15+ Years Experience</h3>
+                    <p>Trusted by homeowners across Central Illinois</p>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Certified Technicians</h3>
+                    <p>Licensed and insured professionals</p>
+                </div>
+                <div class="badge">
+                    <div class="badge-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Top-Rated Service</h3>
+                    <p>5-star rated on Google and HomeAdvisor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Restoration & Repair Services</h2>
+                <p>Comprehensive solutions for your pool maintenance needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Pool Resurfacing</h3>
+                    <p>Give your pool a fresh new look with our professional resurfacing services. We offer a variety of finishes to choose from.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tile Repair & Replacement</h3>
+                    <p>Fix cracked, loose, or missing tiles with our expert repair services for a seamless and beautiful look.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Crack Repairs</h3>
+                    <p>Address structural issues with our specialized crack detection and repair services before they become bigger problems.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint-slash"></i>
+                    </div>
+                    <h3>Leak Detection & Repair</h3>
+                    <p>Our advanced technology quickly identifies and repairs leaks, saving you water and money.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-roller"></i>
+                    </div>
+                    <h3>Pool Painting</h3>
+                    <p>Update your pool's appearance with a fresh coat of high-quality, durable pool paint in your choice of colors.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Equipment Repair</h3>
+                    <p>Expert repair and maintenance for pumps, filters, heaters, and other essential pool equipment.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Recent Projects</h2>
+                <p>See our quality workmanship in action across Central Illinois</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=600&q=80" alt="Pool restoration project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Complete Pool Restoration</h3>
+                        <p>Bloomington, IL</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1571525694428-b9545cc0c8f5?auto=format&fit=crop&w=600&q=80" alt="Tile repair project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Tile Replacement & Deck Repair</h3>
+                        <p>Normal, IL</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1622551997608-300b14e5d223?auto=format&fit=crop&w=600&q=80" alt="Pool equipment repair">
+                    </div>
+                    <div class="project-info">
+                        <h3>Equipment Upgrade & Renovation</h3>
+                        <p>Peoria, IL</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-cta">
+                <a href="#contact" class="btn btn-primary">Start Your Project Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Real reviews from our satisfied customers</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"We used Central Illinois pool to replace our above ground liner. What a great crew - professional, courteous and extremely knowledgeable. We found our new "pool guy"!"</p>
+                    <div class="testimonial-author">
+                        <h4>Lezlie Brannan</h4>
+                        <p>Google Review</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"If I could give more stars I would!!! Best thing about working with Sean is he actually shows up and when he says he's going to! Honest, reasonable pricing and reliable, things that are difficult to find these days. His crew is efficient and professional."</p>
+                    <div class="testimonial-author">
+                        <h4>Shannon Patterson</h4>
+                        <p>Google Review</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I called 5 other pool places throughout the area. Everyone heard what I had and turned me down. One day I came across Central Illinois Pool and I called Sean. He came out and knew exactly what to do. He gave me a very reasonable quote and had the job done within days."</p>
+                    <div class="testimonial-author">
+                        <h4>Matt Rios</h4>
+                        <p>Google Review</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I have a 50 year old inground hybrid cement pool with stainless steel sides. The pipe that goes to the main drain failed. No one in the area would touch it except Sean and his team. They did an excellent job replacing the drain and pipe. I highly recommend!"</p>
+                    <div class="testimonial-author">
+                        <h4>Kevin Hilby</h4>
+                        <p>Google Review</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="section-header text-left">
+                        <h2>About Central Illinois Pool Restoration</h2>
+                        <p>Your trusted partner for pool restoration and repair since 2008</p>
+                    </div>
+                    <p>With over 15 years of experience in the pool industry, Central Illinois Pool Restoration and Repair is your trusted partner for all pool repair and restoration needs. We specialize in comprehensive pool services including resurfacing, tile work, crack repairs, and leak detection.</p>
+                    <p>Our team of certified technicians delivers high-quality workmanship with attention to detail, ensuring your pool looks beautiful and functions perfectly for years to come. Serving homeowners throughout Central Illinois, we pride ourselves on reliability, professionalism, and exceptional customer service.</p>
+                    <p>Whether you need a minor repair or complete pool restoration, we have the expertise to exceed your expectations.</p>
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="{{ url_for('static', filename='images/about-image.jpg') }}" alt="Pool service technician">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="areas-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Areas We Serve</h2>
+                <p>Providing expert pool restoration services throughout Central Illinois</p>
+            </div>
+            
+            <div class="areas-grid">
+                <div class="area-card">
+                    <h3>Bloomington</h3>
+                </div>
+                <div class="area-card">
+                    <h3>Normal</h3>
+                </div>
+                <div class="area-card">
+                    <h3>Peoria</h3>
+                </div>
+                <div class="area-card">
+                    <h3>Springfield</h3>
+                </div>
+                <div class="area-card">
+                    <h3>Champaign</h3>
+                </div>
+                <div class="area-card">
+                    <h3>Urbana</h3>
+                </div>
+                <div class="area-card">
+                    <h3>Decatur</h3>
+                </div>
+                <div class="area-card">
+                    <h3>Galesburg</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-header text-left">
+                        <h2>Contact Us</h2>
+                        <p>Get in touch for a free consultation and estimate</p>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Our Location</h4>
+                            <p>1207 E Oakland Ave<br>Bloomington, IL 61701</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone Number</h4>
+                            <p><a href="tel:+13099480149">(309) 948-0149</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email Address</h4>
+                            <p><a href="mailto:info@centralilpoolrepair.com">info@centralilpoolrepair.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+                            Saturday: 9:00 AM - 3:00 PM<br>
+                            Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="resurfacing">Pool Resurfacing</option>
+                                <option value="tile-repair">Tile Repair</option>
+                                <option value="crack-repair">Crack Repair</option>
+                                <option value="leak-detection">Leak Detection</option>
+                                <option value="equipment-repair">Equipment Repair</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                width="100%" 
+                height="100%" 
+                frameborder="0" 
+                style="border:0" 
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=1207+E+Oakland+Ave,+Bloomington,+IL+61701" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-text">Central Illinois</span>
+                    <span class="logo-highlight">Pool Restoration</span>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-nav-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Pool Resurfacing</a></li>
+                            <li><a href="#">Tile Repair</a></li>
+                            <li><a href="#">Crack Repairs</a></li>
+                            <li><a href="#">Leak Detection</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#projects">Recent Projects</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-nav-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><a href="tel:+13099480149">(309) 948-0149</a></li>
+                            <li><a href="mailto:info@centralilpoolrepair.com">info@centralilpoolrepair.com</a></li>
+                            <li>1207 E Oakland Ave, Bloomington, IL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 Central Illinois Pool Restoration and Repair. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
