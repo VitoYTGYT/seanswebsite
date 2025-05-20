@@ -173,7 +173,7 @@
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1571525694428-b9545cc0c8f5?auto=format&fit=crop&w=600&q=80" alt="Tile repair project">
+                        <!-- Remove broken image for Tile repair project -->
                     </div>
                     <div class="project-info">
                         <h3>Tile Replacement & Deck Repair</h3>
@@ -183,7 +183,7 @@
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1622551997608-300b14e5d223?auto=format&fit=crop&w=600&q=80" alt="Pool equipment repair">
+                        <!-- Remove broken image for Pool equipment repair -->
                     </div>
                     <div class="project-info">
                         <h3>Equipment Upgrade & Renovation</h3>
@@ -287,7 +287,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="{{ url_for('static', filename='images/about-image.jpg') }}" alt="Pool service technician">
+                    <!-- Remove broken image for Pool service technician -->
                 </div>
             </div>
         </div>
@@ -492,5 +492,37 @@
         </div>
     </footer>
 
+    <!-- ElevenLabs widget floating bottom right -->
+    <style>
+      a-elevenlabs-convai {
+        position: fixed !important;
+        bottom: 24px !important;
+        right: 24px !important;
+        z-index: 99999 !important;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      }
+    </style>
+    <a-elevenlabs-convai agent-id="agent_01jvq0cphwf5ran0hhkkk1zcrn"></a-elevenlabs-convai>
+    <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+    <script>
+      // Diagnostic: check if the widget is defined after 5 seconds
+      setTimeout(function() {
+        if (!customElements.get('a-elevenlabs-convai')) {
+          const msg = document.createElement('div');
+          msg.style.background = '#ffcccc';
+          msg.style.color = '#900';
+          msg.style.padding = '10px';
+          msg.style.position = 'fixed';
+          msg.style.bottom = '10px';
+          msg.style.right = '10px';
+          msg.style.zIndex = 9999;
+          msg.textContent = 'ElevenLabs widget failed to load. Check your network and agent ID.';
+          document.body.appendChild(msg);
+          console.error('ElevenLabs widget custom element not defined.');
+        } else {
+          console.log('ElevenLabs widget custom element is defined.');
+        }
+      }, 5000);
+    </script>
 </body>
 </html>
